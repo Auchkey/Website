@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<title>Coursework</title>
+<link rel="stylesheet" href="styles.css">
+
+<div class="navbar">
+<ul id="majorlinks">
+  <li><a href="Index">Home</a></li>
+  <li class = "active"><a href="Coursework">Coursework</a></li>
+  <li><a href="MyWork">Work Log</a></li>
+  <li id="validator"><a href="https://validator.w3.org/">W3C Validator</a></li>
+</ul>
+</div>
+
+<body>
+  <h1>Coursework</h1>
+
+  <p>This is the coursework page.</p>
+</body>
+
+</html>

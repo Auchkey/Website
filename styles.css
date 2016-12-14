@@ -1,0 +1,51 @@
+body {
+
+}
+
+h1 {
+
+}
+
+p {
+
+}
+
+.navbar {
+
+}
+
+#majorlinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d1d1d1;
+  border: 1px solid #999999;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #999999;
+}
+
+li a {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+li a:hover {
+  background-color: #555555;
+  color:white;
+}
+
+.active {
+  background-color: #40BCE1;
+}
+
+#validator {
+  float: right;
+  border-right: none;
+}
