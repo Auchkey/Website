@@ -9,7 +9,6 @@ main {
 
 
 /* entire navbar */
-
 nav {
     /* fill entire width of top */
     max-width: none;
@@ -19,14 +18,12 @@ nav {
 
 
 /* mobile dropdown button */
-
 .dropDownMenu {
     display: none;
 }
 
 
 /* navbar links section */
-
 .navbar-content {
     max-width: none;
     /*wrap navbar in background */
@@ -38,7 +35,6 @@ nav {
 
 
 /* navbar links */
-
 .navbar-content>a {
     float: left;
     display: block;
@@ -54,7 +50,6 @@ nav {
 
 
 /* links on hover */
-
 .navbar-content>a:hover {
     background-color: #f55d02;
     color: #fff;
@@ -63,12 +58,21 @@ nav {
 
 
 /* current page */
-
 .navbar-content>.active {
     background-color: #1555a8;
     color: #fff;
     text-shadow: .1em .1em .1em #000;
     text-decoration: underline;
+}
+
+/* literature review formatting */
+#LiteratureReviewMain {
+    text-align: justify;
+    line-height:1.6;
+}
+
+#References {
+    text-align: justify;
 }
 
 img {
@@ -106,7 +110,6 @@ footer {
 
 
 /* validator link */
-
 footer>a {
     /* remove underlining */
     text-decoration: none;
@@ -114,12 +117,10 @@ footer>a {
 
 
 /* smaller screen formatting */
-
 @media (orientation: portrait) {
 
 
     /* dropdown button */
-
     .dropDownMenu {
         background-color: #1555a8;
         color: #fff;
@@ -135,14 +136,12 @@ footer>a {
 
 
     /* dropdown button on hover & focus */
-
     .dropDownMenu:hover, .dropDownMenu:focus {
         background-color: #f55d02;
     }
 
 
     /* nav in top right corner */
-
     nav {
         position: fixed;
         z-index: 1;
@@ -152,7 +151,6 @@ footer>a {
 
 
     /* dropdown content (Hidden by Default) */
-
     .navbar-content {
         display: none;
         position: absolute;
@@ -160,7 +158,6 @@ footer>a {
 
 
     /* dropdown links */
-
     .navbar-content>a {
         color: black;
         text-decoration: none;
@@ -174,7 +171,6 @@ footer>a {
 
 
     /* change colour of dropdown links on hover */
-
     .navbar-content>a:hover {
         background-color: #f55d02;
     }
@@ -187,14 +183,12 @@ footer>a {
 
 
     /* show the dropdown menu */
-
     .show {
         display: block;
     }
 
 
     /* reduce margin + padding sizes on small devices */
-
     main {
         margin-left: 1%;
         margin-right: 1%;
