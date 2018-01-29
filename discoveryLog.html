@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Discovery Log</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Images/webicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <nav>
+        <button onclick="myFunction()" class="dropDownMenu" type="button" aria-haspopup="true">Menu</button>
+
+        <div id="navDropdown" class="navbar-content" role="menu">
+
+            <a href="index.html">Home</a>
+            <a href="literatureReview.html">Literature Review</a>
+            <a id="active" href="discoveryLog.html">Discovery Log</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1>My Discovery Log</h1>
+
+        <p>
+            Here is my discovery log. It contains notes about the things I've learned during WebF1 this year.
+        </p>
+
+
+        <h2>2016-9-29</h2>
+
+        <ul>
+            <li>Location for using my virtual machine: <a href="http://port.ac.uk/myvm">http://port.ac.uk/myvm</a></li>
+            <li>Learned how to create a webpage and upload it to my virtual machine.</li>
+            <li>&lt;!DOCTYPE html&gt; is used to declare a webpage using HTML5. This lets the browser know it is viewing an HTML document.</li>
+            <li>HTML 4.01 was based on SGML (standard generalised markup language), meaning &lt;!DOCTYPE&gt; referred to the page&rsquo;s DTD (document type definition). The DTD declares how the markup language should be rendered on the browser according
+                to specified rules.</li>
+            <li>For example, &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt; is HTML 4.01 strict, which does not allow deprecated elements.</li>
+            <li>HTML5 is not based on SGML, so &lt;!DOCTYPE html&gt; doesn&rsquo;t refer to a DTD. It simply tells the browser to display an HTML5 document.</li>
+        </ul>
+
+
+        <h2>2016-10-06</h2>
+
+        <h3>Information on privacy on the web:</h3>
+        <ul>
+            <li>Physical devices can be used to track people in their homes.</li>
+            <li>Motion sensors in smoke alarms can detect movement, thermostat temperature gauges can detect when you are present in the home trying to warm or cool the building.</li>
+            <li>Data is important to business. It is effectively a digital currency.</li>
+            <li>Loyalty cards gather your data for businesses to store, process, sell, etc.</li>
+        </ul>
+
+
+        <h2>2016-11-17</h2>
+
+        <h3>CSS:</h3>
+        <ul>
+            <li>Basic syntax for CSS: Selector { attribute: value; }</li>
+            <li>For example: &ldquo;p { color: white; }&ldquo; would colour all text inside a p-tag to white.</li>
+            <li>A period is used to select an element class. I.e: .classSelector</li>
+            <li>A hash sign is used to select an element id. I.e: #idSelector</li>
+            <li>The browser converts markup language &amp; CSS of web document into DOM (Document Object Model). The document content and style is combined. It then displays the content of the DOM.</li>
+        </ul>
+
+        <h2>2016-11-24</h2>
+
+        <h3>Links:</h3>
+        <ul>
+            <li>Basic syntax: &lt;a href=&rdquo;URL&rdquo;&gt;&lt;/a&gt;</li>
+            <li>Absolute URLs (i.e. to other web sites) require the scheme (http://)</li>
+            <li>Relative URLs omit the scheme. Can link to pages in same directory (page.html), child directories (folder/page.html) and parent directories (../folder.html)</li>
+            <li>Target attribute: An option for &lt;a&gt; which specifies the window to open the linked page in.</li>
+            <li>target = &ldquo;_self&rdquo; Opens in current window (default)</li>
+            <li>target = &ldquo;_blank&rdquo; Opens in a new window (not encouraged, can hinder usability and accessibility of web content)</li>
+            <li>target = &ldquo;framename&rdquo; Opens in a framed name</li>
+            <li>Fragment links are used to scroll the page to a particular element on the page.</li>
+            <li>To do this, add an id tag to something, then make a relative url, but instead of href=&ldquo;url.com&rdquo;, use href=&ldquo;#idName&rdquo;</li>
+            <li>This can be done to scroll to a particular element on even a different page, using href=&ldquo;url.com/#idName&rdquo;</li>
+            <li>&lt;nav&gt;(HTML5): Acts as a container for links to other web pages. It removes the need to use a &lt;div&gt; tag with something such as class=&rdquo;navigation&rdquo; to define a section used for navigating the web.</li>
+        </ul>
+
+        <h2>2016-12-01</h2>
+
+        <h3>Images:</h3>
+        <ul>
+            <li>Hotlinking: involves linking images from other servers. Can save you some bandwidth, but risks the image being changed on server it comes from.</li>
+            <li>This gives a loss of control over the content being displayed. If the server changes the original image, then the image changes on your web page as well.</li>
+            <li>It is good practise to provide every image with an alt attribute. This is a short description on the image. This will be displayed instead should the image itself fail to be displayed.</li>
+        </ul>
+
+        <h3>Comparisons of images from worksheet:</h3>
+        <h4>01_img:</h4>
+        <ul>
+            <li>Changing the url in the anchor tag shows the &lsquo;alt&rsquo; description.</li>
+            <li>Hovering over it does nothing.</li>
+        </ul>
+
+        <h4>02_size_attrs:</h4>
+        <ul>
+            <li>Width and height set to 400 each. Appears taller than prev image.</li>
+            <li>Changing browser window size doesn&rsquo;t change the image or text.</li>
+            <li>Changed width to 400 obviously makes it longer.</li>
+            <li>Removing height and weight attr makes image appear identical to 01_img.</li>
+        </ul>
+
+        <h4>03_size_css:</h4>
+        <ul>
+            <li>Uses css to simplify the img tag.</li>
+            <li>Css uses img selector, so all images are affected in the same way. Inserting another image and changing the height value changed both images. Removing the height and weight values also changes both images.</li>
+        </ul>
+
+        <h4>04_size_css_byid:</h4>
+        <ul>
+            <li>Two images which use different id tags.</li>
+            <li>Changing the size of the window causes the images to scale, due to the viewport-widths (vw) code.</li>
+            <li>Adding opacity: 0.5; to the #teapot causes the teapot image to fade slightly.</li>
+            <li>Making visibility: hidden; for the uni image causes it to disappear, but the page is still formatted such that there is an empty space for where it used to be.</li>
+            <li>Display: none; on the other hand also removes the empty space the image occupies.</li>
+        </ul>
+
+        <h4>05_images_in_text:</h4>
+        <ul>
+            <li>Images inline with text are set to 1em in height, so they appear as emojis.</li>
+        </ul>
+
+
+        <h2>2017-01-10</h2>
+        <h3>Design:</h3>
+
+        <ul>
+            <li>The verb of the word is more important than the noun. Design defines how something works.</li>
+            <li>In design, everything is to have a purpose and a use. A minimalist and focused designer understands what the user wants and implements just that.</li>
+            <li>A design is finished when there is nothing left to take away from it.</li>
+            <li>Keeping a log of the design process is good practise. The design process can take a long time, so being able to look back is important for refreshing ideas and avoiding pitfalls.</li>
+        </ul>
+
+        <ul>
+            <li>In information design, information itself is the most important aspect. It is important to consider what the user wants, not just what looks good to designer.</li>
+            <li>Information is used to define short-term and long-term design goals.</li>
+            <li>I.e. understanding the competition helps to define the minimal design requirements that need to be met. Understanding the user ensures the design corresponds to their needs.</li>
+        </ul>
+
+
+        <h2>2017-01-19</h2>
+        <h3>Usability:</h3>
+
+        <ul>
+            <li>Responsive design mode on Firefox can be used to check site appearance through different devices (such as mobiles and tablets).</li>
+            <li>Web pages may sometimes be cached. To load the most up-to-date content from the server, go to &ldquo;network&rdquo; field in &ldquo;inspect element&rdquo;.</li>
+        </ul>
+
+
+        <h2>2017-02-07</h2>
+        <h3>Accessibility:</h3>
+
+        <ul>
+            <li>Law requires certain standards to be put in place to assist the impaired.</li>
+            <li>Likewise, websites should adhere to guidelines and principles which improve accessibility.</li>
+            <li>Doing so allows more people to use your website, which is good for both you and those whom rely on accessibility tools.</li>
+        </ul>
+
+        <ul>
+            <li>WCAG 2.0: Web content accessibility guidelines. It provides recommendations for designing more accessible web content. In particular, aria tags are helpful for providing semantic detail to web content (such as the &ldquo;role&rdquo; attribute
+                to define the purpose of a piece of content, or &ldquo;aria-haspopup&rdquo; to notify accessibility tools that some content provides a popup).</li>
+        </ul>
+
+        <ul>
+            <li>Aria tags: these are added to html code to give each block of markup some semantic meaning. They help users with assistive technologies by defining points on the webpage designed to enhance accessibility.</li>
+        </ul>
+
+        <ul>
+            <li>HTML5 improves accessibility by providing built-in semantic tags to describe the content of a webpage (i.e. &lt;nav&gt;, &lt;article&gt;, &lt;aside&gt;).</li>
+            <li>This is better than simply using generic tags like &lt;div&gt; and &lt;span&gt; with only a developer-assigned class name to define the content, which is difficult or outright impossible for assistive technology to make use of.</li>
+        </ul>
+
+
+        <h2>2017-02-15</h2>
+        <h3>Videos:</h3>
+
+        <ul>
+            <li>Not all browsers support all video codecs.</li>
+            <li>To overcome this, providing copies of a video which use different codecs should be implemented to the webpage.</li>
+            <li>In HTML5, the &lt;video&gt; element is used to embed a video.</li>
+            <li>Within the video element, adding &lt;source&gt; allows you to define the source of the video and the type (its codec). Multiple &lt;source&gt; elements can be used, one for each video location and codec. This is useful for supplying copies
+                of the same video with different codecs for different browsers.</li>
+            <li>I later found that to add controls to the video (i.e. pause, volume), the word &ldquo;controls&rdquo; should be added to the &lt;video&gt; element.</li>
+        </ul>
+
+
+        <h2>2017-03-02</h2>
+        <ul>
+            <li>VM upload checker <a href="jacek.soc.port.ac.uk/myvm-coursework/">found here.</a></li>
+            <li>Folder name for VM: <i>webf1_coursework</i></li>
+            <li><a href="http://stackoverflow.com/questions/22698718/can-a-html-5-video-tag-have-multiple-mp4-sources-with-different-codecs">Info on video codec support in html.</a></li>
+        </ul>
+
+    </main>
+
+    <footer>
+        Website created by UP819474 &copy; Test it with <a class="validator" href="https://validator.w3.org/check/?uri=referer">W3C Validator</a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,51 +1,204 @@
-body {
-
+main {
+    margin: 1em auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Times New Roman", Times, serif;
+    /* limit max. character line width to aid readablity */
+    max-width: 66em;
 }
 
-h1 {
 
+/* entire navbar */
+
+nav {
+    /* fill entire width of top */
+    max-width: none;
+    /* remove whitespace above + sides */
+    margin: -.55em -.55em 0 -.55em;
 }
 
-p {
 
+/* mobile dropdown button */
+
+.dropDownMenu {
+    display: none;
 }
 
-.navbar {
 
+/* navbar links section */
+
+.navbar-content {
+    max-width: none;
+    /*wrap navbar in background */
+    overflow: hidden;
+    background-color: #7595b8;
+    border: .1em solid #000;
+    box-shadow: .1em .1em 1em #333;
 }
 
-#majorlinks {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #d1d1d1;
-  border: 1px solid #999999;
+
+/* navbar links */
+
+.navbar-content>a {
+    float: left;
+    display: block;
+    padding: 1em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: #000;
+    border-right: .1em solid #000;
 }
 
-li {
-  float: left;
-  border-right: 1px solid #999999;
+
+/* links on hover */
+
+.navbar-content>a:hover {
+    background-color: #f55d02;
+    color: #fff;
+    text-shadow: .1em .1em .1em #000;
 }
 
-li a {
-  display: block;
-  padding: 14px;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
+
+/* current page */
+
+.navbar-content>.active {
+    background-color: #1555a8;
+    color: #fff;
+    text-shadow: .1em .1em .1em #000;
+    text-decoration: underline;
 }
 
-li a:hover {
-  background-color: #555555;
-  color:white;
+img {
+    font-style: italic;
+    font-size: .8em;
+    border: .1em solid #000;
+    box-shadow: .1em .1em .1em #333;
 }
 
-.active {
-  background-color: #40BCE1;
+#ArcheryTarget {
+    width: 40%;
+    max-width: 20em;
+    height: auto;
 }
 
-#validator {
-  float: right;
-  border-right: none;
+video {
+    width: 60%;
+    height: auto;
+    border: .1em solid #000;
+    box-shadow: .1em .1em .1em #333;
+}
+
+footer {
+    background-color: #7595b8;
+    color: #fff;
+    border: .1em solid #000;
+    text-shadow: .1em .1em .1em #000;
+    padding: 0.2em;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* validator link */
+
+footer>a {
+    /* remove underlining */
+    text-decoration: none;
+}
+
+
+/* smaller screen formatting */
+
+@media (orientation: portrait) {
+
+
+    /* dropdown button */
+
+    .dropDownMenu {
+        background-color: #1555a8;
+        color: #fff;
+        text-shadow: .1em .1em .1em #000;
+        padding: 2em 1.5em;
+        font-size: 1em;
+        min-width: 7em;
+        cursor: pointer;
+        display: inline-block;
+        border: .1em solid #000;
+        box-shadow: .1em .1em .1em #333;
+    }
+
+
+    /* dropdown button on hover & focus */
+
+    .dropDownMenu:hover, .dropDownMenu:focus {
+        background-color: #f55d02;
+    }
+
+
+    /* nav in top right corner */
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        top: .5%;
+        right: 1.2%;
+    }
+
+
+    /* dropdown content (Hidden by Default) */
+
+    .navbar-content {
+        display: none;
+        position: absolute;
+    }
+
+
+    /* dropdown links */
+
+    .navbar-content>a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 2em 1.5em;
+        border: none;
+        /* border under buttons */
+        border-bottom: .1em solid #000;
+        float: none;
+    }
+
+
+    /* change colour of dropdown links on hover */
+
+    .navbar-content>a:hover {
+        background-color: #f55d02;
+    }
+
+
+    .navbar-content>#active {
+        /* remove underlining */
+        text-decoration: none;
+    }
+
+
+    /* show the dropdown menu */
+
+    .show {
+        display: block;
+    }
+
+
+    /* reduce margin + padding sizes on small devices */
+
+    main {
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 5em 0 0 0;
+    }
+
 }
