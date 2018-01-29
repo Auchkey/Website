@@ -4,4 +4,4 @@ This contains the website I made as part of the coursework for the Web Fundament
 
 Inside is a main index page containing an image and a video, along with some text. There is also a page containing the literature review I produced right at the start of my first year. Finally, you can find the discovery log containing some notes on what I learned during the unit.
 
-The website uses CSS for presentation and a small javascript script for navigation bar functionality.
+The website uses CSS for presentation and a small javascript file for navigation bar functionality.
